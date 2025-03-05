@@ -91,7 +91,7 @@ const navigate=useNavigate()
     <div
       className="bg-black w-full h-96 opacity-80"
       style={{
-        backgroundImage: 'url("https://source.unsplash.com/7HDi-EkG11I")',
+        backgroundImage: 'url("https://t3.ftcdn.net/jpg/00/93/76/02/360_F_93760221_KJMb5fQHdgai8y4mUF6TzLJWRJQQAO2K.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

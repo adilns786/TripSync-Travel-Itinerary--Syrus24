@@ -44,7 +44,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/community" element={<Community />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/maps" element={<Maps />} />
+          {/* <Route path="/maps" element={<Maps />} /> */}
           {/* <Route
             path="/community"
             element={
@@ -55,7 +55,7 @@ function App() {
           /> */}
 
           <Route path="/location" element={<Location />} />
-          <Route path="/timelineform" element={<Timelineform />} />
+          {/* <Route path="/timelineform" element={<Timelineform />} /> */}
         </Routes>
         <div>
           <Footer />

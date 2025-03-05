@@ -21,41 +21,31 @@ function Navbar() {
   }, []); // Run the effect only once on component mount
 
   return (
-    <header className="text-gray-600 body-font bg-white  h-15 p-3 border-b border-gray-500 my-0.2 font-sans font-semibold px-52">
+    <header className="text-gray-600 body-font bg-white h-15 p-3 border-b border-gray-500 my-0.2 font-sans font-semibold px-52">
       <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div>
           <img
             src={logoImage}
-            alt="Your Alt Text"
+            alt="Logo"
             className="w-10 h-10 p-2 bg-blue-200 rounded-full"
           />
         </div>
-
-        {/* <a
-          href="/"
-          className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-        > */}
-        {/* <div className="w-10 h-10 rounded-full bg-blue-300" style={{ backgroundImage: `url(${logoImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div> */}
         <span className="ml-3 text-2xl font-extrabold font-serif text-black">
           TripSync
         </span>
-        {/* </a> */}
-        <nav className="md:ml-auto flex flex-wrap it    ems-center text-base justify-center pl-10 pr-10">
-          <a className="mr-5 text-zinc-950 px-3">
-            <Link to="/">Home</Link>
-          </a>
-          <a className="mr-5 text-zinc-950 px-3">
-            {" "}
-            <Link to="/explore">Explore</Link>
-          </a>
-          <a className="mr-5 text-zinc-950 px-3">
-            {" "}
-            <Link to="/blogs">Blogs</Link>
-          </a>
-          <a className="mr-5 text-zinc-950 px-3">
-            {" "}
-            <Link to="/community">Community</Link>
-          </a>
+        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center pl-10 pr-10">
+          <Link to="/" className="mr-5 text-zinc-950 px-3">
+            Home
+          </Link>
+          <Link to="/explore" className="mr-5 text-zinc-950 px-3">
+            Explore
+          </Link>
+          <Link to="/blogs" className="mr-5 text-zinc-950 px-3">
+            Blogs
+          </Link>
+          <Link to="/community" className="mr-5 text-zinc-950 px-3">
+            Community
+          </Link>
         </nav>
 
         {emailExists ? (
@@ -79,7 +69,7 @@ function Navbar() {
           </button>
         ) : (
           <button
-            className="inline-flex items-cenbter bg-black text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded-full text-base mt-4 md:mt-0"
+            className="inline-flex items-center bg-black text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded-full text-base mt-4 md:mt-0"
             onClick={handleClickLogin}
           >
             Login
