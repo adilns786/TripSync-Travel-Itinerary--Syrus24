@@ -7,8 +7,8 @@ function Explore() {
   return (
     <div className="bg-white">
       <ExploreHero />
-      <OurExpertise />
-      <ProductsCollection />
+      {/* <OurExpertise /> */}
+      {/* <ProductsCollection /> */}
     </div>
   );
 }
